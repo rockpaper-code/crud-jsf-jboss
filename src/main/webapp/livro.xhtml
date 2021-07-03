@@ -10,20 +10,25 @@
 	<ui:define name="corpo">
 
 		<div class="card">
-		    <h5>Titulo:</h5>
-		    
-		    <div class="input-group input-group-sm mb-3">
-		    
-			 	<p:inputText class="ui-inputfield"  />
-			
-			</div>
-			<br />    
-		    
-		    <p:commandButton
-		    	type="button"
-		    	value="Success"
-		    	styleClass="ui-button-raised ui-button-success"
-		    />
+			<h:form id="book">
+		
+			    <h5>Titulo:</h5>
+			    
+			    <div class="input-group input-group-sm mb-3">
+			    
+			    	<!--  p:inputText id="bookName" value="#{bookBean.book.title}" style="width: 300px"/ -->
+	            	
+				 	<p:inputText class="ui-inputfield" id="livro" value="#{livroBean.livro.titulo}"  />
+				
+				</div>
+				<br />    
+			    
+			    <p:commandButton
+			    	value="Success"
+			    	styleClass="ui-button-raised ui-button-success"
+			    	action="#{livroBean.salvarLivro()}"
+			    />
+			 </h:form>
 		 </div>
 		
 	</ui:define>
