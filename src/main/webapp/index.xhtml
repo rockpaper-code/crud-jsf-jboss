@@ -4,58 +4,11 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:p="http://primefaces.org/ui">
+	xmlns:p="http://primefaces.org/ui"
+	template="/WEB-INF/template/default.xhtml">
 
-	<h:head>	
-	
-		<style type="text/css">
-			.mt-2 {
-				margin-top: 2em;
-				border-top: 1px solid #dee2e6;
-				border-radius: 3px;
-			}
-		</style>
+		<ui:define name="corpo">	
 
-	</h:head>
-
-	<h:body style="margin: 2em 20%">
-
-		<p:panel style="width:100%; text-align:center">
-
-			<h1>Hello, this is basic JSF + JBoss setup</h1>
-
-		</p:panel>
-
-		<div class="card">
-			<h:form>
-				<p:menubar>	
-				
-					<p:menuitem value="Inicio" icon="pi pi-fw pi-home"/>					
-			
-					<p:submenu label="Edit" icon="pi pi-fw pi-pencil">
-						<p:menuitem value="Left" icon="pi pi-fw pi-align-left" />
-						<p:menuitem value="Right" icon="pi pi-fw pi-align-right" />
-						<p:menuitem value="Center" icon="pi pi-fw pi-align-center" />
-						<p:menuitem value="Justify" icon="pi pi-fw pi-align-justify" />
-					</p:submenu>
-
-				</p:menubar>
-			</h:form>
-		</div>
-		
-		<p:panel styleClass="mt-2">
-
-    
-		</p:panel>
-		
-		
-		<p:panel  styleClass="mt-2">
-			<p>
-				<b>&copy; 2021</b>. zherro - MIT
-			</p>
-		</p:panel>
-
-	</h:body>
-
+		</ui:define>
 
 </ui:composition>
